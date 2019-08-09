@@ -38,10 +38,10 @@ cd manual-club-linux-perf
 source $HOME/.cargo/env
 
 # Compile our program
-cargo build
+cargo build --release
 
 # Performance profile our compiled binary
-perf record ./target/debug/manual-club-linux-perf
+perf record ./target/release/manual-club-linux-perf
 
 # Read out performance profile
 perf report
